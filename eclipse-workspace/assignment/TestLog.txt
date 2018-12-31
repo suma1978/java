@@ -1,0 +1,200 @@
+[1537121320.743][INFO]: COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [  ],
+            "extensions": [  ]
+         }
+      } ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [  ],
+         "extensions": [  ]
+      }
+   }
+}
+[1537121320.747][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1537121320.747][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1537121320.749][INFO]: Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-automation --enable-logging --force-fieldtrials=SiteIsolationExtensions/Control --ignore-certificate-errors --load-extension=/var/folders/vw/9x5r5pmn76l9465zvqspy5mxgj7mq0/T/.org.chromium.Chromium.RRxPR2/internal --log-level=0 --metrics-recording-only --no-first-run --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/vw/9x5r5pmn76l9465zvqspy5mxgj7mq0/T/.org.chromium.Chromium.YTcAwm data:,
+[1537121321.546][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1537121321.835][INFO]: RESPONSE InitSession {
+   "acceptInsecureCerts": false,
+   "acceptSslCerts": false,
+   "applicationCacheEnabled": false,
+   "browserConnectionEnabled": false,
+   "browserName": "chrome",
+   "chrome": {
+      "chromedriverVersion": "2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db)",
+      "userDataDir": "/var/folders/vw/9x5r5pmn76l9465zvqspy5mxgj7mq0/T/.org.chromium.Chromium.YTcAwm"
+   },
+   "cssSelectorsEnabled": true,
+   "databaseEnabled": false,
+   "goog:chromeOptions": {
+      "debuggerAddress": "localhost:61303"
+   },
+   "handlesAlerts": true,
+   "hasTouchScreen": false,
+   "javascriptEnabled": true,
+   "locationContextEnabled": true,
+   "mobileEmulationEnabled": false,
+   "nativeEvents": true,
+   "networkConnectionEnabled": false,
+   "pageLoadStrategy": "normal",
+   "platform": "Mac OS X",
+   "rotatable": false,
+   "~~~": "..."
+}
+[1537121322.075][INFO]: COMMAND Navigate {
+   "url": "http://toolsqa.com/automation-practice-form/"
+}
+[1537121322.075][INFO]: Waiting for pending navigations...
+[1537121322.106][INFO]: Done waiting for pending navigations. Status: ok
+[1537121322.882][INFO]: Waiting for pending navigations...
+[1537121325.856][INFO]: Done waiting for pending navigations. Status: ok
+[1537121325.856][INFO]: RESPONSE Navigate
+[1537121325.953][INFO]: COMMAND FindElement {
+   "using": "name",
+   "value": "firstname"
+}
+[1537121325.953][INFO]: Waiting for pending navigations...
+[1537121326.017][INFO]: Done waiting for pending navigations. Status: ok
+[1537121326.050][INFO]: Waiting for pending navigations...
+[1537121326.064][INFO]: Done waiting for pending navigations. Status: ok
+[1537121326.064][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.4550999220430081-1"
+}
+[1537121326.081][INFO]: COMMAND TypeElement {
+   "id": "0.4550999220430081-1",
+   "value": [ "Suma" ]
+}
+[1537121326.081][INFO]: Waiting for pending navigations...
+[1537121326.086][INFO]: Done waiting for pending navigations. Status: ok
+[1537121326.274][INFO]: Waiting for pending navigations...
+[1537121328.091][INFO]: Done waiting for pending navigations. Status: ok
+[1537121328.091][INFO]: RESPONSE TypeElement
+[1537121328.095][INFO]: COMMAND FindElement {
+   "using": "name",
+   "value": "lastname"
+}
+[1537121328.095][INFO]: Waiting for pending navigations...
+[1537121328.097][INFO]: Done waiting for pending navigations. Status: ok
+[1537121328.111][INFO]: Waiting for pending navigations...
+[1537121328.121][INFO]: Done waiting for pending navigations. Status: ok
+[1537121328.122][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.4550999220430081-2"
+}
+[1537121328.126][INFO]: COMMAND TypeElement {
+   "id": "0.4550999220430081-2",
+   "value": [ "Thota" ]
+}
+[1537121328.126][INFO]: Waiting for pending navigations...
+[1537121328.129][INFO]: Done waiting for pending navigations. Status: ok
+[1537121328.222][INFO]: Waiting for pending navigations...
+[1537121328.223][INFO]: Done waiting for pending navigations. Status: ok
+[1537121328.223][INFO]: RESPONSE TypeElement
+[1537121328.229][INFO]: COMMAND FindElement {
+   "using": "name",
+   "value": "firstname"
+}
+[1537121328.229][INFO]: Waiting for pending navigations...
+[1537121328.232][INFO]: Done waiting for pending navigations. Status: ok
+[1537121328.241][INFO]: Waiting for pending navigations...
+[1537121328.242][INFO]: Done waiting for pending navigations. Status: ok
+[1537121328.242][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.4550999220430081-1"
+}
+[1537121328.245][INFO]: COMMAND GetElementText {
+   "id": "0.4550999220430081-1"
+}
+[1537121328.245][INFO]: Waiting for pending navigations...
+[1537121328.246][INFO]: Done waiting for pending navigations. Status: ok
+[1537121328.272][INFO]: Waiting for pending navigations...
+[1537121328.273][INFO]: Done waiting for pending navigations. Status: ok
+[1537121328.273][INFO]: RESPONSE GetElementText ""
+[1537121328.277][INFO]: COMMAND FindElement {
+   "using": "name",
+   "value": "lastname"
+}
+[1537121328.277][INFO]: Waiting for pending navigations...
+[1537121328.278][INFO]: Done waiting for pending navigations. Status: ok
+[1537121328.285][INFO]: Waiting for pending navigations...
+[1537121328.290][INFO]: Done waiting for pending navigations. Status: ok
+[1537121328.290][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.4550999220430081-2"
+}
+[1537121328.293][INFO]: COMMAND GetElementText {
+   "id": "0.4550999220430081-2"
+}
+[1537121328.293][INFO]: Waiting for pending navigations...
+[1537121328.294][INFO]: Done waiting for pending navigations. Status: ok
+[1537121328.309][INFO]: Waiting for pending navigations...
+[1537121328.310][INFO]: Done waiting for pending navigations. Status: ok
+[1537121328.310][INFO]: RESPONSE GetElementText ""
+[1537121328.314][INFO]: COMMAND CloseWindow {
+
+}
+[1537121328.445][INFO]: RESPONSE CloseWindow [  ]

@@ -1,0 +1,30 @@
+package Newpackage;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+public class JSONFileparse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		JSONObject jo=new JSONObject();
+		jo.put("firstName", "John");
+		jo.put("lastname", "Smith");
+		jo.put("age", 25);
+		
+		Map m=new LinkedHashMap();
+		
+		
+		m.put("Street Address","21 2nd Street" );
+		m.put("city", "New York");
+		m.put("State","NY");
+		m.put("ZipCode",01748);
+		jo.put("address", m);
+		
+
+	}
+
+}

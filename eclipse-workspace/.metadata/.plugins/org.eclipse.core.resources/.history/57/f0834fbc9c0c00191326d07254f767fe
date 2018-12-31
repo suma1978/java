@@ -1,0 +1,37 @@
+package Newpackage;
+
+import java.util.Arrays;
+
+public class anagram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println(anagram("anagram","margana"));
+	}
+	
+	public static boolean anagram(String str1,String str2)
+	{
+		char[] s1=str1.toLowerCase().toCharArray();
+		char[] s2=str2.toLowerCase().toCharArray();
+		if(s1.length!=s2.length)
+		
+		 return false;	
+		
+		//sort the arrays
+		Arrays.sort(s1);
+		Arrays.sort(s2);
+		for(int i=0;i<s1.length;i++)
+		
+			if(s1[i]!=s2[i])
+		
+				return false;
+			
+		 return true;
+			
+				
+			
+		
+	}
+
+}

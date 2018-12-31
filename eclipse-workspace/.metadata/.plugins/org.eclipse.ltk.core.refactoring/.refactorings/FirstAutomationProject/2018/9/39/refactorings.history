@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;testCase.xlsx&apos; to &apos;KeywordFramework&apos;&#x0A;- Original project: &apos;FirstAutomationProject&apos;&#x0A;- Destination element: &apos;KeywordFramework&apos;&#x0A;- Original element: &apos;testCase.xlsx&apos;&#x0A;- Update references to refactored element" description="Move file" destination="=KeywordFramework" element1="testCase.xlsx" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1538170789478" units="0" version="1.0"/>
+</session>

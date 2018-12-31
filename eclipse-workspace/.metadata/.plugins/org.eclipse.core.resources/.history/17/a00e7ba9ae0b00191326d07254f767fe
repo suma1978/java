@@ -1,0 +1,27 @@
+package Newpackage;
+
+public class Inputfromuser {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int numargs=args.length;
+		if(numargs<2)
+		{
+			System.out.println("MIN IS 2");
+		}
+		else
+		{
+			int sum=0;
+			for(int i=0;i<args.length;i++)
+			{
+				sum=sum+Integer.parseInt(args[i]);
+				
+			}
+			System.out.print(sum);
+		}
+		
+
+	}
+
+}

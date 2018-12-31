@@ -1,0 +1,14 @@
+package Newpackage;
+
+public enum Suits {
+	DIAMONDS (1),SPADES(4),HEARTS(3),CLUBS(2);
+	private int val;
+	Suits(int Value)
+	{
+		this.val=Value;
+	}
+
+}
+| enum Ranks{
+	
+}

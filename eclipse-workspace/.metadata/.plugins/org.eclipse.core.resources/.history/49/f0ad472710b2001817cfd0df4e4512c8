@@ -1,0 +1,46 @@
+package locatorspractice;
+
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+
+public class Challenge {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", "/Users/nbommu/Documents/jarfiles/chromedriver");
+		WebDriver driver=new ChromeDriver();
+		//put an implicit wait
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		//Launch the URL
+		driver.get("http://toolsqa.wpengine.com/automation-practice-form/");
+		List<WebElement> selRadio=driver.findElements(By.name("sex"));
+		//boolean bvalue=false;
+		boolean bvalue=selRadio.get(0).isSelected();
+		if(bvalue== true)
+		{
+			selRadio.get(1).click();
+		}
+		else
+		{
+			selRadio.get(0).click();
+		}
+		
+		//Select third radio button for years of exp using ID
+		
+		WebElement rdoClick=driver.findElement(By.id("exp-2"));
+		rdoClick.click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		//driver.quit();
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,58 @@
+package Newpackage;
+
+
+public class day1and2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     int[] arr= {1,2,3,4,5};
+     int[] arr1=new int[arr.length];
+     //arr1=intArray(arr);
+    System.out.print(verifyno(arr,11));
+  
+	}
+	
+	public static int[] intArray(int[] arr)
+	{
+		
+		int product=1;
+		for(int i=0;i<arr.length;i++)
+		{
+			product=product*arr[i];
+		}
+		for(int i=0;i<arr.length;i++)
+		{
+			arr[i]=product/arr[i];
+			System.out.println(arr[i]);
+			
+		}
+		System.out.println(product);
+		return arr;
+	}
+
+	public static String verifyno(int[] arr,int n)
+	{
+		boolean flag=false;
+		for(int i=0;i<arr.length-1;i++)
+		{
+			if(arr[i]+arr[i+1]==n)
+			{
+				flag=true;
+				return "YES";
+			}
+			else
+			{
+				flag=false;
+				continue;
+			}
+		}
+		if(flag==false)
+		{
+			return "NO";
+		}
+		else
+		{
+			return "YES";
+		}
+	}
+}

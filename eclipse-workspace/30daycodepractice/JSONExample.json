@@ -1,0 +1,8 @@
+{
+"firstName":"John",
+	"address":{"Street Address":"21 2nd Street","city":"New York","State":"NY","ZipCode":1748},
+	"phonenumber":[{"type":"home","number":"212 555-1234"},
+		{"type":"fax","number":"212 555-1234","mobile":"781-956-0987"}],
+"age":25,
+"lastname":"Smith"
+}
